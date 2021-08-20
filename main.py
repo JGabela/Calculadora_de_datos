@@ -71,11 +71,41 @@ if vr == True:
     media = vr
     media = float(media)
 
+    #This block distributes the recolected data
+    reee = 'p'
+
     num = input('Numero de datos a procesar: ')
-    num = int(num)
+    if type(num) == type(reee):
+        try:
+            num = int(num)
+        except:
+            while type(num) == type(reee):
+                print('Necesitas al menos 3 datos para obtener respuestas validas y tienen que ser numeros')
+                num = input('Numero de datos a procesar: ')
+                if num == '1':
+                    num = int(num)
+                if num == '2':
+                    num = int(num)
+                if num == '3':
+                    num = int(num)
+                if num == '4':
+                    num = int(num)
+                if num == '5':
+                    num = int(num)
+                if num == '6':
+                    num = int(num)
+                if num == '7':
+                    num = int(num)
+                if num == '8':
+                    num = int(num)
+                if num == '9':
+                    num = int(num)
 
     if num < 3:
-        print('Necesitas al menos 3 datos para obtener respuestas validas')
+        while num < 3:
+            print('Necesitas al menos 3 datos para obtener respuestas validas')
+            num = input('Numero de datos a procesar: ')
+            num = int(num)
 
     if num == 3:
         d1 = input('Dato 1: ')
@@ -123,6 +153,7 @@ if vr == True:
             CS.cs2.cs2tt = abs(CS.cs2.cs2tt)
         media = round(media, CS.cs3.cs3tt)
 
+    #These blocks process the recolected data
     if num == 3:
         d1 = float(d1)
         d2 = float(d2)
@@ -135,8 +166,6 @@ if vr == True:
             fn.rae = xd + yd + zd
             fn.rae = fn.rae / (num - 1)
             fn.rae = math.sqrt(fn.rae)
-
-
         fn(d1, d2, d3)
 
     if num == 4:
@@ -209,7 +238,7 @@ if vr == True:
     print('Datos:')
     print('')
     print('Error Aleatorio:', fn.rae)
-    print('Incertidumbre Absoluta:', media, '+-', fn.rae)
+    print('Incertidumbre Absoluta:', media, '±', fn.rae)
     print('Incertidumbre Relativa:', ir)
     print('Incertidumbre Porcentual:', ipp, '%')
     print('')
@@ -217,13 +246,42 @@ if vr == True:
 # This block process all data if there is a vr
 if vr == False:
 
-    num = input('Numero de datos a procesar: ')
-    num = int(num)
-
     # This group of blocks distributes the data recolected
-    if num < 3:
-        print('Necesitas al menos 3 datos para obtener respuestas validas')
+    reee = 'p'
 
+    num = input('Numero de datos a procesar: ')
+    if type(num) == type(reee):
+        try:
+            num = int(num)
+        except:
+            while type(num) == type(reee):
+                print('Necesitas al menos 3 datos para obtener respuestas validas y tienen que ser numeros')
+                num = input('Numero de datos a procesar: ')
+                if num == '1':
+                    num = int(num)
+                if num == '2':
+                    num = int(num)
+                if num == '3':
+                    num = int(num)
+                if num == '4':
+                    num = int(num)
+                if num == '5':
+                    num = int(num)
+                if num == '6':
+                    num = int(num)
+                if num == '7':
+                    num = int(num)
+                if num == '8':
+                    num = int(num)
+                if num == '9':
+                    num = int(num)
+
+    if num < 3:
+        while num < 3:
+            print('Necesitas al menos 3 datos para obtener respuestas validas')
+            num = input('Numero de datos a procesar: ')
+            num = int(num)
+        
     if num == 3:
         d1 = input('Dato 1: ')
         d2 = input('Dato 2: ')
@@ -278,6 +336,7 @@ if vr == False:
             CS.cs3.cs3tt = abs(CS.cs3.cs3tt)
         media = round(media, CS.cs3.cs3tt)
 
+    #These blocks process the recolected data
     if num == 3:
         d1 = float(d1)
         d2 = float(d2)
@@ -347,7 +406,7 @@ if vr == False:
         fn(d1, d2, d3, d4, d5, d6)
 
     # this block rounds the rae
-    media = str(media)
+    media = str(media)                              #media is not defined
     Roundabout.count_sigfigs(media)
     fn.rae = round(float(fn.rae), Roundabout.count_sigfigs.rer)
 
@@ -363,12 +422,13 @@ if vr == False:
     print('')
     print('Valor Promedio:', media)
     print('Error Aleatorio:', fn.rae)
-    print('Incertidumbre Absoluta:', media, '+-', fn.rae)
+    print('Incertidumbre Absoluta:', media, '±', fn.rae)
     print('Incertidumbre Relativa:', ir)
     print('Incertidumbre Porcentual:', ipp, '%')
     print('')
 
 #-------------------------------------------(José Miguel Gabela Salazar, 2021)--------------------------------------------------------
+#-----------------------------------------------------(Version 1.11)------------------------------------------------------------------
 
 ntr = input('Quieres hacer de nuevo?')
 if ntr == 'si':
@@ -434,11 +494,41 @@ if ntr == True:
         media = vr
         media = float(media)
 
+        #This block distributes the reoclected data
+        reee = 'p'
+
         num = input('Numero de datos a procesar: ')
-        num = int(num)
+        if type(num) == type(reee):
+            try:
+                num = int(num)
+            except:
+                while type(num) == type(reee):
+                    print('Necesitas al menos 3 datos para obtener respuestas validas y tienen que ser numeros')
+                    num = input('Numero de datos a procesar: ')
+                    if num == '1':
+                        num = int(num)
+                    if num == '2':
+                        num = int(num)
+                    if num == '3':
+                        num = int(num)
+                    if num == '4':
+                        num = int(num)
+                    if num == '5':
+                        num = int(num)
+                    if num == '6':
+                        num = int(num)
+                    if num == '7':
+                        num = int(num)
+                    if num == '8':
+                        num = int(num)
+                    if num == '9':
+                        num = int(num)
 
         if num < 3:
-            print('Necesitas al menos 3 datos para obtener respuestas validas')
+            while num < 3:
+                print('Necesitas al menos 3 datos para obtener respuestas validas')
+                num = input('Numero de datos a procesar: ')
+                num = int(num)
 
         if num == 3:
             d1 = input('Dato 1: ')
@@ -486,6 +576,7 @@ if ntr == True:
                 CS.cs2.cs2tt = abs(CS.cs2.cs2tt)
             media = round(media, CS.cs3.cs3tt)
 
+        #These blocks process the recolected data
         if num == 3:
             d1 = float(d1)
             d2 = float(d2)
@@ -563,7 +654,7 @@ if ntr == True:
         print('Datos:')
         print('')
         print('Error Aleatorio:', fn.rae)
-        print('Incertidumbre Absoluta:', media, '+-', fn.rae)
+        print('Incertidumbre Absoluta:', media, '±', fn.rae)
         print('Incertidumbre Relativa:', ir)
         print('Incertidumbre Porcentual:', ipp, '%')
         print('')
@@ -571,12 +662,41 @@ if ntr == True:
     # This block process all data if there is a vr
     if vr == False:
 
-        num = input('Numero de datos a procesar: ')
-        num = int(num)
-
         # This group of blocks distributes the data recolected
+        reee = 'p'
+
+        num = input('Numero de datos a procesar: ')
+        if type(num) == type(reee):
+            try:
+                num = int(num)
+            except:
+                while type(num) == type(reee):
+                    print('Necesitas al menos 3 datos para obtener respuestas validas y tienen que ser numeros')
+                    num = input('Numero de datos a procesar: ')
+                    if num == '1':
+                        num = int(num)
+                    if num == '2':
+                        num = int(num)
+                    if num == '3':
+                        num = int(num)
+                    if num == '4':
+                        num = int(num)
+                    if num == '5':
+                        num = int(num)
+                    if num == '6':
+                        num = int(num)
+                    if num == '7':
+                        num = int(num)
+                    if num == '8':
+                        num = int(num)
+                    if num == '9':
+                        num = int(num)
+
         if num < 3:
-            print('Necesitas al menos 3 datos para obtener respuestas validas')
+            while num < 3:
+                print('Necesitas al menos 3 datos para obtener respuestas validas')
+                num = input('Numero de datos a procesar: ')
+                num = int(num)
 
         if num == 3:
             d1 = input('Dato 1: ')
@@ -632,6 +752,7 @@ if ntr == True:
                 CS.cs3.cs3tt = abs(CS.cs3.cs3tt)
             media = round(media, CS.cs3.cs3tt)
 
+        #These blocks process the recolected data
         if num == 3:
             d1 = float(d1)
             d2 = float(d2)
@@ -710,12 +831,14 @@ if ntr == True:
         print('')
         print('Valor Promedio:', media)
         print('Error Aleatorio:', fn.rae)
-        print('Incertidumbre Absoluta:', media, '+-', fn.rae)
+        print('Incertidumbre Absoluta:', media, '±', fn.rae)
         print('Incertidumbre Relativa:', ir)
         print('Incertidumbre Porcentual:', ipp, '%')
         print('')
 
-#--------------------------------------------------------------------------------------------------------------------------------
+
+#-------------------------------------------(José Miguel Gabela Salazar, 2021)--------------------------------------------------------
+#-----------------------------------------------------(Version 1.11)------------------------------------------------------------------
 
 if ntr == False:
     nttr = False
@@ -784,11 +907,41 @@ if nttr == True:
         media = vr
         media = float(media)
 
+        #This block distributes the recolected data
+        reee = 'p'
+
         num = input('Numero de datos a procesar: ')
-        num = int(num)
+        if type(num) == type(reee):
+            try:
+                num = int(num)
+            except:
+                while type(num) == type(reee):
+                    print('Necesitas al menos 3 datos para obtener respuestas validas y tienen que ser numeros')
+                    num = input('Numero de datos a procesar: ')
+                    if num == '1':
+                        num = int(num)
+                    if num == '2':
+                        num = int(num)
+                    if num == '3':
+                        num = int(num)
+                    if num == '4':
+                        num = int(num)
+                    if num == '5':
+                        num = int(num)
+                    if num == '6':
+                        num = int(num)
+                    if num == '7':
+                        num = int(num)
+                    if num == '8':
+                        num = int(num)
+                    if num == '9':
+                        num = int(num)
 
         if num < 3:
-            print('Necesitas al menos 3 datos para obtener respuestas validas')
+            while num < 3:
+                print('Necesitas al menos 3 datos para obtener respuestas validas')
+                num = input('Numero de datos a procesar: ')
+                num = int(num)
 
         if num == 3:
             d1 = input('Dato 1: ')
@@ -836,6 +989,7 @@ if nttr == True:
                 CS.cs2.cs2tt = abs(CS.cs2.cs2tt)
             media = round(media, CS.cs3.cs3tt)
 
+        #These blocks process the recolected data
         if num == 3:
             d1 = float(d1)
             d2 = float(d2)
@@ -913,7 +1067,7 @@ if nttr == True:
         print('Datos:')
         print('')
         print('Error Aleatorio:', fn.rae)
-        print('Incertidumbre Absoluta:', media, '+-', fn.rae)
+        print('Incertidumbre Absoluta:', media, '±', fn.rae)
         print('Incertidumbre Relativa:', ir)
         print('Incertidumbre Porcentual:', ipp, '%')
         print('')
@@ -921,12 +1075,42 @@ if nttr == True:
     # This block process all data if there is a vr
     if vr == False:
 
-        num = input('Numero de datos a procesar: ')
-        num = int(num)
+        #This group of blocks distributes the data recolected
 
-        # This group of blocks distributes the data recolected
+        reee = 'p'
+
+        num = input('Numero de datos a procesar: ')
+        if type(num) == type(reee):
+            try:
+                num = int(num)
+            except:
+                while type(num) == type(reee):
+                    print('Necesitas al menos 3 datos para obtener respuestas validas y tienen que ser numeros')
+                    num = input('Numero de datos a procesar: ')
+                    if num == '1':
+                        num = int(num)
+                    if num == '2':
+                        num = int(num)
+                    if num == '3':
+                        num = int(num)
+                    if num == '4':
+                        num = int(num)
+                    if num == '5':
+                        num = int(num)
+                    if num == '6':
+                        num = int(num)
+                    if num == '7':
+                        num = int(num)
+                    if num == '8':
+                        num = int(num)
+                    if num == '9':
+                        num = int(num)
+
         if num < 3:
-            print('Necesitas al menos 3 datos para obtener respuestas validas')
+            while num < 3:
+                print('Necesitas al menos 3 datos para obtener respuestas validas')
+                num = input('Numero de datos a procesar: ')
+                num = int(num)
 
         if num == 3:
             d1 = input('Dato 1: ')
@@ -982,6 +1166,7 @@ if nttr == True:
                 CS.cs3.cs3tt = abs(CS.cs3.cs3tt)
             media = round(media, CS.cs3.cs3tt)
 
+        #These blocks process the recolected data
         if num == 3:
             d1 = float(d1)
             d2 = float(d2)
@@ -1060,7 +1245,7 @@ if nttr == True:
         print('')
         print('Valor Promedio:', media)
         print('Error Aleatorio:', fn.rae)
-        print('Incertidumbre Absoluta:', media, '+-', fn.rae)
+        print('Incertidumbre Absoluta:', media, '±', fn.rae)
         print('Incertidumbre Relativa:', ir)
         print('Incertidumbre Porcentual:', ipp, '%')
         print('')
