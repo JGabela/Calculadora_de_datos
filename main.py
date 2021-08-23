@@ -1,4 +1,4 @@
-#Version 2.0
+#Version 2.2
 #José Miguel Gabela Salazar, 2021
 
 import CS
@@ -6,34 +6,19 @@ import Roundabout
 import math
 
 print('')
-print('Version 2.0')
+print('Version 2.2')
 print('Procesadora de datos expperimentales')
 
 jmgs = True
+reee = 'p'
 
 while jmgs == True:
     
     print('')
     
     # This string determines the real value of the experiment
-    vr = input('Hay Valor Real, Si o No? ')
-    if vr == 'si':
-        vr = True
-    elif vr == 'SI':
-        vr = True
-    elif vr == 'Si':
-        vr = True
-    elif vr == '1':
-        vr = True
-    elif vr == 'no':
-        vr = False
-    elif vr == 'NO':
-        vr = False
-    elif vr == 'No':
-        vr = False
-    elif vr == '0':
-        vr = False
-    else:
+    vr = 87
+    while vr == 87:
         vr = input('Hay Valor Real, Si o No? ')
         if vr == 'si':
             vr = True
@@ -51,66 +36,29 @@ while jmgs == True:
             vr = False
         elif vr == '0':
             vr = False
-        else:
-            vr = input('Hay Valor Real, Si o No? ')
-            if vr == 'si':
-                vr = True
-            elif vr == 'SI':
-                vr = True
-            elif vr == 'Si':
-                vr = True
-            elif vr == '1':
-                vr = True
-            elif vr == 'no':
-                vr = False
-            elif vr == 'NO':
-                vr = False
-            elif vr == 'No':
-                vr = False
-            elif vr == '0':
-                vr = False
 
     #this block process all data if there is vr
     if vr == True:
-        vr = input('Ingresa el valor real: ')
-        media = vr
-        media = float(media)
 
-        #This block distributes the recolected data
-        reee = 'p'
+        media = input('Ingresa el valor real: ')
+        while type(media) == type(reee):
+            try:
+                media = float(media)
+            except:
+                media = input('Ingresa el valor real: ')
 
+        #This group of blocks distributes the data recolected
         num = input('Numero de datos a procesar: ')
-        if type(num) == type(reee):
+        while type(num) == type(reee):
             try:
                 num = int(num)
-            except:
-                while type(num) == type(reee):
-                    print('Necesitas al menos 3 datos para obtener respuestas validas y tienen que ser numeros')
+                while num < 3:
+                    print('Necesitas al menos 3 datos para obtener respuestas validas')
                     num = input('Numero de datos a procesar: ')
-                    if num == '1':
-                        num = int(num)
-                    if num == '2':
-                        num = int(num)
-                    if num == '3':
-                        num = int(num)
-                    if num == '4':
-                        num = int(num)
-                    if num == '5':
-                        num = int(num)
-                    if num == '6':
-                        num = int(num)
-                    if num == '7':
-                        num = int(num)
-                    if num == '8':
-                        num = int(num)
-                    if num == '9':
-                        num = int(num)
-
-        if num < 3:
-            while num < 3:
-                print('Necesitas al menos 3 datos para obtener respuestas validas')
-                num = input('Numero de datos a procesar: ')
-                num = int(num)
+                    num = str(num)
+            except:
+                print('Tiene que ser un numero')
+                num = input('Numero de datos a procesar: ')                
 
         if num == 3:
             d1 = input('Dato 1: ')
@@ -248,38 +196,41 @@ while jmgs == True:
         print('Incertidumbre Porcentual:', ipp, '%')
         print('')
 
+        jmgs = input('Quieres hacer de nuevo?')
+        if jmgs == 'si':
+            jmgs = True
+        elif jmgs == 'SI':
+            jmgs = True
+        elif jmgs == 'Si':
+            jmgs = True
+        elif jmgs == '1':
+            jmgs = True
+        elif jmgs == 'no':
+            jmgs = False
+        elif jmgs == 'NO':
+            jmgs = False
+        elif jmgs == 'No':
+            jmgs = False
+        elif jmgs == '0':
+            jmgs = False
+        else:
+            jmgs = False
+
     # This block process all data if there is not a vr
     if vr == False:
 
-        # This group of blocks distributes the data recolected
-        reee = 'p'
-
+        #This group of blocks distributes the data recolected
         num = input('Numero de datos a procesar: ')
-        if type(num) == type(reee):
+        while type(num) == type(reee):
             try:
                 num = int(num)
-            except:
-                while type(num) == type(reee):
-                    print('Necesitas al menos 3 datos para obtener respuestas validas y tienen que ser numeros')
+                while num < 3:
+                    print('Necesitas al menos 3 datos para obtener respuestas validas')
                     num = input('Numero de datos a procesar: ')
-                    if num == '1':
-                        num = int(num)
-                    if num == '2':
-                        num = int(num)
-                    if num == '3':
-                        num = int(num)
-                    if num == '4':
-                        num = int(num)
-                    if num == '5':
-                        num = int(num)
-                    if num == '6':
-                        num = int(num)
-                    if num == '7':
-                        num = int(num)
-                    if num == '8':
-                        num = int(num)
-                    if num == '9':
-                        num = int(num)
+                    num = str(num)
+            except:
+                print('Tiene que ser un numero')
+                num = input('Numero de datos a procesar: ')
 
         if num < 3:
             while num < 3:
@@ -411,7 +362,7 @@ while jmgs == True:
             fn(d1, d2, d3, d4, d5, d6)
 
         # this block rounds the rae
-        media = str(media)                              #media is not defined
+        media = str(media)
         Roundabout.count_sigfigs(media)
         fn.rae = round(float(fn.rae), Roundabout.count_sigfigs.rer)
 
@@ -455,5 +406,6 @@ while jmgs == True:
 
 rtrr = input('Listo')
 trtt = input('Presiona ENTER para cerrar el programa')
+
 #-------------------------------------------(José Miguel Gabela Salazar, 2021)--------------------------------------------------------
-#-----------------------------------------------------(Version 2.0)------------------------------------------------------------------
+#-----------------------------------------------------(Version 2.2)------------------------------------------------------------------
