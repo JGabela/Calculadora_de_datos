@@ -1,9 +1,11 @@
-#Version 2.2
+#Version 2.22
 #José Miguel Gabela Salazar, 2021
 
 import CS
 import Roundabout
 import math
+import re
+import rezero
 
 print('')
 print('Version 2.2')
@@ -20,22 +22,8 @@ while jmgs == True:
     vr = 87
     while vr == 87:
         vr = input('Hay Valor Real, Si o No? ')
-        if vr == 'si':
-            vr = True
-        elif vr == 'SI':
-            vr = True
-        elif vr == 'Si':
-            vr = True
-        elif vr == '1':
-            vr = True
-        elif vr == 'no':
-            vr = False
-        elif vr == 'NO':
-            vr = False
-        elif vr == 'No':
-            vr = False
-        elif vr == '0':
-            vr = False
+        re.rer(vr)
+        vr = re.rer.vrr
 
     #this block process all data if there is vr
     if vr == True:
@@ -197,24 +185,8 @@ while jmgs == True:
         print('')
 
         jmgs = input('Quieres hacer de nuevo?')
-        if jmgs == 'si':
-            jmgs = True
-        elif jmgs == 'SI':
-            jmgs = True
-        elif jmgs == 'Si':
-            jmgs = True
-        elif jmgs == '1':
-            jmgs = True
-        elif jmgs == 'no':
-            jmgs = False
-        elif jmgs == 'NO':
-            jmgs = False
-        elif jmgs == 'No':
-            jmgs = False
-        elif jmgs == '0':
-            jmgs = False
-        else:
-            jmgs = False
+        rezero.sk(jmgs)
+        jmgs = rezero.sk.jmgs
 
     # This block process all data if there is not a vr
     if vr == False:
@@ -385,27 +357,11 @@ while jmgs == True:
         print('')
 
         jmgs = input('Quieres hacer de nuevo?')
-        if jmgs == 'si':
-            jmgs = True
-        elif jmgs == 'SI':
-            jmgs = True
-        elif jmgs == 'Si':
-            jmgs = True
-        elif jmgs == '1':
-            jmgs = True
-        elif jmgs == 'no':
-            jmgs = False
-        elif jmgs == 'NO':
-            jmgs = False
-        elif jmgs == 'No':
-            jmgs = False
-        elif jmgs == '0':
-            jmgs = False
-        else:
-            jmgs = False
+        rezero.sk(jmgs)
+        jmgs = rezero.sk.jmgs
 
 rtrr = input('Listo')
 trtt = input('Presiona ENTER para cerrar el programa')
 
 #-------------------------------------------(José Miguel Gabela Salazar, 2021)--------------------------------------------------------
-#-----------------------------------------------------(Version 2.2)------------------------------------------------------------------
+#-----------------------------------------------------(Version 2.22)------------------------------------------------------------------
