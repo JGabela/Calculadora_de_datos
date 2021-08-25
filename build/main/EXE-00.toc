@@ -144,7 +144,7 @@
  [],
  False,
  False,
- 1629760787,
+ 1629901810,
  [('run.exe',
    'c:\\users\\josem\\pycharmprojects\\calculadora de '
    'datos\\venv\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',

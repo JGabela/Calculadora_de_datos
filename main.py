@@ -10,6 +10,9 @@ import rezero
 print('')
 print('Version 2.2')
 print('Procesadora de datos expperimentales')
+print('')
+
+ah = input('Presiona ENTER para empezar')
 
 jmgs = True
 reee = 'p'
