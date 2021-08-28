@@ -8,11 +8,11 @@ import re
 import rezero
 
 print('')
-print('Version 2.2')
+print('Version 2.22')
 print('Procesadora de datos expperimentales')
 print('')
 
-ah = input('Presiona ENTER para empezar')
+ah = input('Presiona ENTER para empezar ')
 
 jmgs = True
 reee = 'p'
@@ -169,12 +169,12 @@ while jmgs == True:
         # this block rounds the rae
         media = str(media)
         Roundabout.count_sigfigs(media)
-        fn.rae = round(float(fn.rae), Roundabout.count_sigfigs.rer)
 
         media = float(media)
 
         ir = fn.rae / media
         ir = round(ir, Roundabout.count_sigfigs.rer)
+        fn.rae = round(float(fn.rae), Roundabout.count_sigfigs.rer)
         ipp = ir * 100
         int(ipp)
 
@@ -187,7 +187,8 @@ while jmgs == True:
         print('Incertidumbre Porcentual:', ipp, '%')
         print('')
 
-        jmgs = input('Quieres hacer de nuevo?')
+        #This block is to redo the process if the user wants to
+        jmgs = input('Quieres hacer de nuevo? ')
         rezero.sk(jmgs)
         jmgs = rezero.sk.jmgs
 
@@ -339,12 +340,12 @@ while jmgs == True:
         # this block rounds the rae
         media = str(media)
         Roundabout.count_sigfigs(media)
-        fn.rae = round(float(fn.rae), Roundabout.count_sigfigs.rer)
 
         media = float(media)
 
         ir = fn.rae / media
         ir = round(ir, Roundabout.count_sigfigs.rer)
+        fn.rae = round(float(fn.rae), Roundabout.count_sigfigs.rer)
         ipp = ir * 100
         int(ipp)
 
@@ -359,7 +360,7 @@ while jmgs == True:
         print('')
         print('')
 
-        jmgs = input('Quieres hacer de nuevo?')
+        jmgs = input('Quieres hacer de nuevo? ')
         rezero.sk(jmgs)
         jmgs = rezero.sk.jmgs
 
