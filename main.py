@@ -51,6 +51,8 @@ while jmgs == True:
                 print('Tiene que ser un numero')
                 num = input('Numero de datos a procesar: ')                
 
+        print('')
+        print('Datos Brutos:')
         if num == 3:
             d1 = input('Dato 1: ')
             d2 = input('Dato 2: ')
@@ -171,20 +173,26 @@ while jmgs == True:
         Roundabout.count_sigfigs(media)
 
         media = float(media)
-
         ir = fn.rae / media
-        ir = round(ir, Roundabout.count_sigfigs.rer)
+        tre = float(ir)
+        ter = fn.rae
+
         fn.rae = round(float(fn.rae), Roundabout.count_sigfigs.rer)
+        ir = round(ir, Roundabout.count_sigfigs.rar)
         ipp = ir * 100
         int(ipp)
 
         print('')
-        print('Datos:')
-        print('')
+        print('Datos Procesados:')
+        print('Valor Promedio:', media)
         print('Error Aleatorio:', fn.rae)
         print('Incertidumbre Absoluta:', media, '±', fn.rae)
         print('Incertidumbre Relativa:', ir)
         print('Incertidumbre Porcentual:', ipp, '%')
+        print('')
+        print('Datos Procesados sin redondear:')
+        print('Error Aleatorio:', ter)
+        print('Incertidumbre Relativa:', tre)
         print('')
 
         #This block is to redo the process if the user wants to
@@ -214,6 +222,8 @@ while jmgs == True:
                 num = input('Numero de datos a procesar: ')
                 num = int(num)
 
+        print('')
+        print('Datos Brutos:')
         if num == 3:
             d1 = input('Dato 1: ')
             d2 = input('Dato 2: ')
@@ -342,22 +352,27 @@ while jmgs == True:
         Roundabout.count_sigfigs(media)
 
         media = float(media)
-
         ir = fn.rae / media
-        ir = round(ir, Roundabout.count_sigfigs.rer)
+        tre = float(ir)
+        ter = fn.rae
+
         fn.rae = round(float(fn.rae), Roundabout.count_sigfigs.rer)
+        ir = round(ir, Roundabout.count_sigfigs.rar)
         ipp = ir * 100
         int(ipp)
+        ipp = round(ipp, Roundabout.count_sigfigs.rar)
 
         print('')
-        print('Datos:')
-        print('')
+        print('Datos Procesados:')
         print('Valor Promedio:', media)
         print('Error Aleatorio:', fn.rae)
         print('Incertidumbre Absoluta:', media, '±', fn.rae)
         print('Incertidumbre Relativa:', ir)
         print('Incertidumbre Porcentual:', ipp, '%')
         print('')
+        print('Datos Procesados sin redondear:')
+        print('Error Aleatorio:', ter)
+        print('Incertidumbre Relativa:', tre)
         print('')
 
         jmgs = input('Quieres hacer de nuevo? ')
