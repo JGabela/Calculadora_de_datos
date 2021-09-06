@@ -1,4 +1,4 @@
-#Version 2.22
+#Version 3.33
 #José Miguel Gabela Salazar, 2021
 
 import CS
@@ -8,8 +8,8 @@ import re
 import rezero
 
 print('')
-print('Version 2.22')
-print('Procesadora de datos expperimentales')
+print('Version 3.33')
+print('Procesadora de datos experimentales')
 print('')
 
 ah = input('Presiona ENTER para empezar ')
@@ -173,14 +173,15 @@ while jmgs == True:
         Roundabout.count_sigfigs(media)
 
         media = float(media)
-        ir = fn.rae / media
-        tre = float(ir)
         ter = fn.rae
-
         fn.rae = round(float(fn.rae), Roundabout.count_sigfigs.rer)
+        ir = fn.rae / media
+        tre = ir
+
         ir = round(ir, Roundabout.count_sigfigs.rar)
         ipp = ir * 100
         int(ipp)
+        ipp = round(ipp, Roundabout.count_sigfigs.rar)
 
         print('')
         print('Datos Procesados:')
@@ -352,11 +353,11 @@ while jmgs == True:
         Roundabout.count_sigfigs(media)
 
         media = float(media)
-        ir = fn.rae / media
-        tre = float(ir)
         ter = fn.rae
-
         fn.rae = round(float(fn.rae), Roundabout.count_sigfigs.rer)
+        ir = fn.rae / media
+        tre = ir
+
         ir = round(ir, Roundabout.count_sigfigs.rar)
         ipp = ir * 100
         int(ipp)
@@ -383,4 +384,4 @@ rtrr = input('Listo')
 trtt = input('Presiona ENTER para cerrar el programa')
 
 #-------------------------------------------(José Miguel Gabela Salazar, 2021)--------------------------------------------------------
-#-----------------------------------------------------(Version 2.22)------------------------------------------------------------------
+#-----------------------------------------------------(Version 3.33)------------------------------------------------------------------

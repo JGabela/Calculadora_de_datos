@@ -16,3 +16,4 @@ def rer(vrr):
         rer.vr = False
     elif vrr == '0':
         rer.vrr = False
+
